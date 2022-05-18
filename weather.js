@@ -6,11 +6,11 @@ class Weather {
     }
 
     // Fetch weather from API
-    // async getWeather() {
-    //     const response = await fetch(`http://api.weatherstack.com/current?access_key=${this.apiKey}&query=${this.city}&units=f`)
-    //     const responseData = await response.json()
-    //     return responseData
-    // }
+    async getWeather() {
+        const response = await fetch(`http://api.weatherstack.com/forecast?access_key=${this.apiKey}&query=${this.city}&hourly=3&units=f`)
+        const responseData = await response.json()
+        return responseData
+    }
 
     // Change weather location
     changeLocation(city) {
