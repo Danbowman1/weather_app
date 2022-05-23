@@ -1,7 +1,9 @@
 class Storage {
     constructor() {
         this.city
+        this.state
         this.defaultCity = 'Miami'
+        this.defaultState = 'FL'
     }
 
     getLocationData()  {
@@ -11,11 +13,22 @@ class Storage {
             this.city = localStorage.getItem('city')
         }
 
-        return { city: this.city }
+
+        if(localStorage.getItem('state') === null) {
+            this.state = this.defaultState
+        } else {
+            this.state = localStorage.getItem('state')
+        }
+
+        return { 
+            city: this.city, 
+            state: this.state
+        }
         
     }
 
-    setLocationData(city) {
+    setLocationData(city, state) {
         localStorage.setItem('city', city)
+        localStorage.setItem('state', state)
     }
 }

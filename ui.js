@@ -10,14 +10,14 @@ class UI {
         this.wind = document.getElementById('w-wind')
     }
 
-    paint(weather) {
-        this.location.textContent = `${weather.location.name}, ${weather.location.region}`
-        this.desc.textContent = weather.current.weather_descriptions[0]
-        this.string.textContent = `${weather.current.temperature}°`
-        this.icon.setAttribute('src', weather.current.weather_icons[0])
-        this.humidity.textContent = `Relative Humidity: ${weather.current.humidity}%`
-        this.precip.textContent = `Precipitation: ${weather.current.precip}`
-        this.feelsLike.textContent = `Feels Like: ${weather.current.feelslike}°`
-        this.wind.textContent = `Wind Speed: ${weather.current.wind_speed} mph`
-    }
+//     paint(weather) {
+//         this.location.textContent = `${weather.resolvedAddress}`
+//         this.desc.textContent = weather.currentConditions.conditions
+//         this.string.textContent = `${weather.currentConditions.temp}°`
+//         this.icon.setAttribute('src', `/img/${weather.currentConditions.icon}.png`)
+//         this.humidity.textContent = `Relative Humidity: ${weather.currentConditions.humidity}%`
+//         this.precip.textContent = `Precipitation: ${weather.currentConditions.precip}`
+//         this.feelsLike.textContent = `Feels Like: ${weather.currentConditions.feelslike}°`
+//         this.wind.textContent = `Wind Speed: ${weather.currentConditions.windspeed} mph`
+//     }
 }
