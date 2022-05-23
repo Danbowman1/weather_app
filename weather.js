@@ -8,7 +8,7 @@ class Weather {
 
     // Fetch weather from API
     async getWeather() {
-        const response = await fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${this.city}%20${this.state}?unitGroup=metric&iconSet=icons2&key=${this.apiKey}&contentType=json`)
+        const response = await fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${this.city}%20${this.state}?unitGroup=us&iconSet=icons2&key=${this.apiKey}&contentType=json`)
         const responseData = await response.json()
         return responseData
     }
