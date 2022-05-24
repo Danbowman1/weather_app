@@ -34,6 +34,7 @@ function getWeather() {
         console.log(results)
         ui.current(results)
         ui.extended(results)
+        ui.hourly(results)
     })
     .catch(err => console.log(err))      
 }

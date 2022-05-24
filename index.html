@@ -16,25 +16,61 @@
     <div class="container p-4">
         <div class="row">
             <div class="col-md-6 mx-auto text-center bg-secondary mt-5 p-5 rounded shadow">
-                <h1 id="w-location" class="text-muted"></h1>
-                <h3 class="text-dark" id="w-desc"></h3>
-                <h3 id="w-string" class="text-muted"></h3>
+                <div id="current-container">
+                <!-- <h1 id="w-location" class="text-muted">Boston, MA, United States</h1>
+                <h3 class="text-dark" id="w-desc">Sunny</h3>
+                <h3 id="w-string" class="text-muted">80°</h3>
                 <img id="w-icon" class="icon" src="/img/clear-day.png" >
                 <ul class="list-group mt-3" id="w-details">
-                    <li class="list-group-item" id="w-humidity"></li>
-                    <li class="list-group-item" id="w-precip"></li>
-                    <li class="list-group-item" id="w-feels-like"></li>
-                    <li class="list-group-item" id="w-wind"></li>
-                </ul>
-                <hr>
-
-                <div class="extended-container">
-                    <ul class="list-group mt-3" id="extended-forecast">
-
-                        
-                    </ul>
+                    <li class="list-group-item" id="w-humidity">65%</li>
+                    <li class="list-group-item" id="w-precip">0</li>
+                    <li class="list-group-item" id="w-feels-like">78°</li>
+                    <li class="list-group-item" id="w-wind">15 mph</li>
+                </ul> -->
                 </div>
-                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#locModal">
+                <hr>
+                
+                <h2>7 Day Forecast</h2>
+                <div id="extended-container">
+                        <!-- <div class="card p-2 mb-3">
+                            <div class='row'>
+                                <div class="col-md-4">
+                                    <p class="mb-0">5-22</p>
+                                    <img src='/img/clear-day.png' style="width: 40px;"></img>
+                                </div>
+                                <div class="col-md-3 mx-auto align-self-center">
+                                    <p class="mb-1 ">High: 80°</p>
+                                    <p class="mb-1">low: 76°</p>
+                                </div>
+                                <div class="col-md-4 align-self-center">
+                                    <p class="align-middle mb-2">Sunny</p>
+                                </div>
+                            </div>    
+                        </div> -->
+                            
+                </div>
+                <hr>
+                
+                <h2>Hourly</h2>
+                <div id="hourly-container">
+                        <!-- <div class="card p-2 mb-3">
+                            <div class='row'>
+                                <div class="col-md-4">
+                                    <p class="mb-0">5-22</p>
+                                    <img src='/img/clear-day.png' style="width: 40px;"></img>
+                                </div>
+                                <div class="col-md-3 mx-auto align-self-center">
+                                    <p class="mb-1 ">High: 80°</p>
+                                    <p class="mb-1">low: 76°</p>
+                                </div>
+                                <div class="col-md-4 align-self-center">
+                                    <p class="align-middle mb-2">Sunny</p>
+                                </div>
+                            </div>    
+                        </div> -->
+                            
+                </div>
+                <button type="button" class="btn btn-info mt-3" data-bs-toggle="modal" data-bs-target="#locModal">
                     Change Location
                 </button>
             </div>
