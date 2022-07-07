@@ -4,7 +4,7 @@
 * HTML
 * Bootswatch
 * JavaScript
-* Weatherstack API
+* Visualcrossing API
 
 #### Apps Function
 ##### In this app you can pick the city you live in and it will return:
@@ -17,7 +17,6 @@
 * Precipitation
 * What the temp. feels like
 * Wind Speed
-#### Things to add:
-* 6 Hour forcast
-* 4 Day forcast
+* 7 Day Forcast
+* Hourly Forcast
 

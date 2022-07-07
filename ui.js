@@ -1,6 +1,5 @@
 class UI {
     constructor() {
-
         this.currentForecast = document.getElementById('current-container')
         this.extendedForecast = document.getElementById('extended-container')
         this.hourlyForecast = document.getElementById('hourly-container')
@@ -23,14 +22,6 @@ class UI {
         `
         this.currentForecast.innerHTML = html
 
-        // this.location.textContent = `${weather.resolvedAddress}`
-        // this.desc.textContent = weather.currentConditions.conditions
-        // this.string.textContent = `${weather.currentConditions.temp}°`
-        // this.icon.setAttribute('src', `/img/${weather.currentConditions.icon}.png`)
-        // this.humidity.textContent = `Relative Humidity: ${weather.currentConditions.humidity}%`
-        // this.precip.textContent = `Precipitation: ${weather.currentConditions.precip}`
-        // this.feelsLike.textContent = `Feels Like: ${weather.currentConditions.feelslike}°`
-        // this.wind.textContent = `Wind Speed: ${weather.currentConditions.windspeed} mph`
     }
 
     extended(weather) {
